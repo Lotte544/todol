@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo
+  </title>
+  <link rel="stylesheet" href="style.css"/>
+ </head>
+<body>
+  <div class="clock">
+    <div id="hour" class="hour"></div>
+    <div id="minute" class="minute"></div>
+    <div id="second" class="second"></div>
+  </div>
+  <div id="tasker" class="tasker">
+    <div id="error" class="error">Please enter a task</div>
+    <div id="tasker-header" class="tasker-header">
+      <input type="text" id="input-task" placeholder="Was gibt es heute?">
+      <button id="add-task-btn"><i class="fa fa-fw fa-plus"></i>
+      </button>
+    </div>
+    <div class="tasker-body">
+      <ul id="tasks"></ul>
+    </div>
+  </div>
+  <div id="flower">
+  <canvas id = 'sunflower'></canvas> 
+  </div>
+  <div id="flower1">
+  <canvas id = 'sunflower'></canvas> 
+  </div>
+  
+<script src="index.js"></script>
+<script src="flower.js"></script>
+</body>
+</html>

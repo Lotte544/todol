@@ -1,0 +1,184 @@
+.clock {
+  background: #badaf9;
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+  position: absolute;
+  top:80px;
+  left:100px;
+  border-style:double;
+  border-color: antiquewhite;
+}
+
+.hour, .minute, .second {
+  position: absolute;
+  margin: auto;
+  left: 49%;
+  bottom: 50%;
+  background: #fde183;
+  width: 2%;
+  height: 40%;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+}
+
+.minute {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  height: 48%;
+  background: #3aedfa;
+}
+
+.second {
+  background: #f9a987;
+  width: 1%;
+  left: 49.5%;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  height: 48%;
+}
+
+.tasker ul, .tasker li,
+.tasker .error,
+.tasker button,
+.tasker input {
+  margin: 0;
+   padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.tasker-header button, .tasker-body .task button {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+body {
+  background-color: #edf6ef;
+background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0V0zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm20 0a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM10 37a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm10-17h20v20H20V20zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14z' fill='%2392a7ac' fill-opacity='0.14' fill-rule='evenodd'/%3E%3C/svg%3E");
+  margin-top: 2rem;
+  font-family: "Summer";
+}
+
+/*PEN STYLES*/
+.tasker {
+  max-width: 400px;
+  margin: auto;
+  border:dotted 5px rgb(240, 214, 214);
+  position:relative;
+  top: 50px;
+}
+
+
+.tasker .error {
+  display: none;
+  background: rgba(237, 28, 36, 0.7);
+  color: #fff;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.tasker ul {
+  background: #fff;
+}
+
+.tasker li,
+.tasker .error,
+.tasker button,
+.tasker input {
+  font: 18px/1.25em Helvetica, Arial, Sans-serif;
+}
+
+.tasker-header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #fae6f3;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.tasker-header input,
+.tasker-header button {
+  color: rgb(185, 180, 180);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.25em;
+  padding: 14px;
+}
+
+.tasker-header input {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.tasker-header button {
+  background: #add5fa;
+  border-left: 1px solid #badaf8;;
+}
+
+.tasker-header button:hover {
+  background: #badaf8;;
+}
+
+.tasker-body .task {
+  display: block;
+  position: relative;
+  padding: 14px 40px 14px 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tasker-body .task:last-child {
+  border-bottom: none;
+}
+
+.tasker-body .task:hover > button {
+  opacity: 1;
+}
+
+.tasker-body .task.completed {
+  color: #cdcdcd;
+  text-decoration: line-through;
+}
+
+.tasker-body .task input {
+  margin-right: 10px;
+}
+
+.tasker-body .task button {
+  color: #cdcdcd;
+  margin: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.tasker-body .task button:hover {
+  color: #ed1c24;
+}
+
+#flower{
+  position: absolute;
+  top:150px;
+  left: 60px;
+}
+
+#flower1{
+  position: absolute;
+  top:250px;
+  left: 40px;
+}
+
+#sunflower{
+  transform: scale(0.3);
+}
+/*# sourceMappingURL=style.css.map */
